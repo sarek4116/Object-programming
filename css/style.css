@@ -4,17 +4,8 @@
   box-sizing: border-box;
 }
 
-.smartphones {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 auto;
-  border: 2px solid black;
-  padding: 15px;
-  height: 400px;
-  width: 800px;
+button {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
