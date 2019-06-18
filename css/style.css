@@ -4,8 +4,137 @@
   box-sizing: border-box;
 }
 
-button {
+.board {
+  border: 2px solid #22386C;
+  background-color: #02609F;
+  max-width: 1200px;
+  min-height: 600px;
+  margin: 100px auto;
+  border-radius: 25px;
+}
+
+.board h1 {
+  color: #022136;
+  text-align: center;
+  margin: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+}
+
+.board .create-column {
   padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background: #aab5d898;
+  border: 3px solid #1b1b64;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.board .create-column:hover {
+  background: #f9f9fa;
+  border: 3px solid rgba(73, 73, 75, 0.555);
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #022136;
+}
+
+.column-container div .column {
+  min-height: 250px;
+  min-width: 200px;
+  background-color: #2C488A;
+  border-radius: 25px;
+  margin: 10px 5px;
+  border: 3px solid #1C2F4E;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column-container div .column h2 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 25px;
+  color: #022136;
+}
+
+.column-container div .column .btn-delete-column {
+  background-color: transparent;
+  border: none;
+  color: #022136;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+
+.column-container div .column .btn-delete-column:hover {
+  transform: scale(1.2);
+}
+
+.column-container div .column .add-card {
+  background: none;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.1s linear;
+  color: #022136;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.column-container div .column .add-card:hover {
+  transform: scale(1.2);
+}
+
+.column-container div .column ul {
+  list-style: none;
+}
+
+.column-container div .column ul .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid #08124967;
+  border-bottom: 3px solid #08124967;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.column-container div .column ul .card .btn-delete {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+
+.column-container div .column ul .card .btn-delete:hover {
+  transform: scale(1.2);
+}
+
+.column-container div .column ul .card p {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #022136;
 }
 
 /*# sourceMappingURL=style.css.map */
